@@ -1,5 +1,5 @@
 programa {
   funcao inicio() {
-    escreva("Ol· Mundo!")
+    escreva("Ol√° Mundo!")
   }
 }
