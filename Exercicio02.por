@@ -17,7 +17,7 @@ programa {
 
     media = (nota1 + nota2 + nota3) / 3
 
-    escreva("A media final de "+nome+" é: "+media)
+    escreva("A media final de "+nome+" Ã©: "+media)
     
   }
 }
