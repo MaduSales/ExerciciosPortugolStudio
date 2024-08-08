@@ -20,10 +20,10 @@ programa {
     escreva("A media final de "+ nome +" é: "+ media)
 
     se (media > 5){
-      escreva("Aluno aprovado")
+      escreva("\nAluno aprovado")
     }
     senao {
-      escreva("Aluno reprovado")
+      escreva("\nAluno reprovado")
     }
     
   }
