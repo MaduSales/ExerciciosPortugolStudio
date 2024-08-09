@@ -1,16 +1,16 @@
 programa {
   funcao inicio() {
-    //Descubra se o número é ímpar ou par
+    //Descubra se o nÃºmero Ã© Ã­mpar ou par
     inteiro numero
 
-    escreva("Digite um número para saber se ele épar ou ímpar: ")
+    escreva("Digite um nÃºmero para saber se ele Ã© par ou Ã­mpar: ")
     leia(numero)
 
     se (numero % 2 == 0){
-      escreva("O número é par")
+      escreva("O nÃºmero Ã© par")
     }
     senao{
-      escreva("O número é ímpar")
+      escreva("O nÃºmero Ã© Ã­mpar")
     }
 
   }
