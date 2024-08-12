@@ -26,6 +26,9 @@ programa {
     senao se (operacao == "divisão"){
       resultado = numero1 / numero2
     }
-     escreva("\nO resultado é: "+ resultado)
+    senao{
+      escreva("Operação inexistente.")
+    }
+    escreva("\nO resultado é: "+ resultado)
   }
 }
