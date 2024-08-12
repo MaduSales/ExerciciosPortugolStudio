@@ -16,20 +16,16 @@ programa {
 
     se (operacao == "soma"){
       resultado = numero1 + numero2
-      escreva("\nO resultado da soma é: "+ resultado)
     }
     senao se (operacao == "subtração"){
       resultado = numero1 - numero2
-      escreva("\nO resultado da subtração é: "+ resultado)
     }
     senao se (operacao == "multiplicação"){
       resultado = numero1 * numero2
-      escreva("\nO resultado da multiplicação é: "+ resultado)
     }
     senao se (operacao == "divisão"){
       resultado = numero1 / numero2
-      escreva("\nO resultado da divisão é: "+ resultado)
     }
-
+     escreva("\nO resultado é: "+ resultado)
   }
 }
