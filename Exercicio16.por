@@ -13,25 +13,26 @@ programa {
     imc = peso / (altura * altura)
 
     se (imc < 16.9){
-      escreva("O seu IMC é "+ Matematica.arredondar(imc,2)+". Muito abaixo do peso.")
+      escreva("Muito abaixo do peso.")
     }
     senao se (imc > 17 e imc < 18.5){
-      escreva("O seu IMC é "+ Matematica.arredondar(imc,2)+". Abaixo do peso.")
+      escreva("Abaixo do peso.")
     }
     senao se (imc > 18.4 e imc < 24.9){
-      escreva(""+ Matematica.arredondar(imc,2)+"IMC normal.")
+      escreva("IMC normal.")
     }
     senao se (imc > 25 e imc < 29.9){
-      escreva("O seu IMC é "+ Matematica.arredondar(imc,2)+". Você está acima do peso.")
+      escreva("Você está acima do peso.")
     }
     senao se (imc > 30 e imc < 34.9){
-      escreva("O seu IMC é "+ Matematica.arredondar(imc,2)+". Obesidade grau I.")
+      escreva("Obesidade grau I.")
     }
     senao se (imc > 35 e imc < 40){
-      escreva("O seu IMC é "+ Matematica.arredondar(imc,2)+".Obesidade grau II.")
+      escreva("Obesidade grau II.")
     }
     senao {
-      escreva("O seu IMC é "+ Matematica.arredondar(imc,2)+".Obesidade grau III.")
+      escreva("Obesidade grau III.")
     }
+    escreva("O seu IMC é "+ Matematica.arredondar(imc,2))
   }
 }
