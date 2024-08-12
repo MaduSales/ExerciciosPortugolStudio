@@ -22,13 +22,13 @@ programa {
     totalSemDesconto = qtdProduto * precoUnitario
 
     se (qtdProduto <= 5){
-      desconto = (totalSemDesconto) * 2/100
+      desconto = totalSemDesconto * 2/100
     }
     senao se (qtdProduto > 5 e qtdProduto <= 10){
-      desconto = (totalSemDesconto) * 3/100
+      desconto = totalSemDesconto * 3/100
     }
     senao{
-      desconto = (totalSemDesconto) * 5/100
+      desconto = totalSemDesconto * 5/100
     }
 
     
