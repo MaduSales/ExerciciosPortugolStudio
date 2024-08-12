@@ -1,39 +1,39 @@
 programa {
   funcao inicio() {
-    //Crie um programa em pseudocódigo para receber: a descrição do produto, a quantidade adquirida e o preço unitário. O programa deve calcular e exibir o total a pagar com desconto.
+    //Crie um programa em pseudocÃ³digo para receber: a descriÃ§Ã£o do produto, a quantidade adquirida e o preÃ§o unitÃ¡rio. O programa deve calcular e exibir o total a pagar com desconto.
 
     //Quantidade <= 5 tem desconto de 2%
-    //Quantidade > 5 e quantidade <= 10 o desconto será 3%
-    //Quantidade > 10 o desconto será de 5%
+    //Quantidade > 5 e quantidade <= 10 o desconto serÃ¡ 3%
+    //Quantidade > 10 o desconto serÃ¡ de 5%
     
     cadeia produto
     inteiro qtdProduto
     real precoUnitario, desconto, total, totalSemDesconto, totalComDesconto
 
-    escreva("Olá! Qual produto você comprou? ")
+    escreva("OlÃ¡! Qual produto vocÃª comprou? ")
     leia(produto)
 
-    escreva("Agora, informe quantos produtos deste você comprou: ")
+    escreva("Agora, informe quantos produtos deste vocÃª comprou: ")
     leia(qtdProduto)
 
-    escreva("Por último, informe o valor de cada produto: ")
+    escreva("Por Ãºltimo, informe o valor de cada produto: ")
     leia(precoUnitario)
 
-    total = qtdProduto * precoUnitario
+    totalSemDesconto = qtdProduto * precoUnitario
 
     se (qtdProduto <= 5){
-      desconto = (total) * 2/100
+      desconto = (totalSemDesconto) * 2/100
     }
     senao se (qtdProduto > 5 e qtdProduto <= 10){
-      desconto = (total) * 3/100
+      desconto = (totalSemDesconto) * 3/100
     }
     senao{
-      desconto = (total) * 5/100
+      desconto = (totalSemDesconto) * 5/100
     }
 
-    totalSemDesconto = total 
-    totalComDesconto = total - desconto 
+    
+    totalComDesconto = totalSemDesconto - desconto 
 
-    escreva("\nComo você comprou "+ qtdProduto +" "+ produto +" por R$"+ precoUnitario +", o desconto será R$"+ desconto +", e o total a pagar será R$"+ totalComDesconto +", mas sem desconto ficaria R$"+ totalSemDesconto)
+    escreva("\nComo vocÃª comprou "+ qtdProduto +" "+ produto +" por R$"+ precoUnitario +", o desconto serÃ¡ R$"+ desconto +", e o total a pagar serÃ¡ R$"+ totalComDesconto +", mas sem desconto ficaria R$"+ totalSemDesconto)
   }
 }
