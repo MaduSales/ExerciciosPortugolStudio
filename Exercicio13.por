@@ -1,34 +1,34 @@
 programa {
   funcao inicio() {
-    //Crie uma calculadora que receba dois números, escolha uma operação, e exiba o resultado da operação escolhida
+    //Crie uma calculadora que receba dois nÃºmeros, escolha uma operaÃ§Ã£o, e exiba o resultado da operaÃ§Ã£o escolhida
 
     inteiro numero1, numero2, resultado
     cadeia operacao
     
-    escreva("Digite um número: ")
+    escreva("Digite um nÃºmero: ")
     leia(numero1)
 
-    escreva("Digite um outro número: ")
+    escreva("Digite um outro nÃºmero: ")
     leia(numero2)
 
-    escreva("\nAgora, escolha uma operação matemática: soma, subtração, multiplicação ou divisão: ")
+    escreva("\nAgora, escolha uma operaÃ§Ã£o matemÃ¡tica: soma, subtraÃ§Ã£o, multiplicaÃ§Ã£o ou divisÃ£o: ")
     leia(operacao)
 
     se (operacao == "soma"){
       resultado = numero1 + numero2
-      escreva("\nO resultado da soma é: "+ resultado)
+      escreva("\nO resultado da soma Ã©: "+ resultado)
     }
-    senao se (operacao == "subtração"){
+    senao se (operacao == "subtraÃ§Ã£o"){
       resultado = numero1 - numero2
-      escreva("\nO resultado da subtração é: "+ resultado)
+      escreva("\nO resultado da subtraÃ§Ã£o Ã©: "+ resultado)
     }
-    senao se (operacao == "multiplicação"){
+    senao se (operacao == "multiplicaÃ§Ã£o"){
       resultado = numero1 * numero2
-      escreva("\nO resultado da multiplicação é: "+ resultado)
+      escreva("\nO resultado da multiplicaÃ§Ã£o Ã©: "+ resultado)
     }
-    senao se (operacao == "divisão"){
+    senao se (operacao == "divisÃ£o"){
       resultado = numero1 / numero2
-      escreva("\nO resultado da multiplicação é: "+ resultado)
+      escreva("\nO resultado da divisÃ£o Ã©: "+ resultado)
     }
 
   }
